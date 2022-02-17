@@ -9,7 +9,7 @@
 * create a file `src/main/resources/.env` copying `src/main/resources/.env.template`
 * run
 ```shell
-mvn package exec:java
+./mvnw package exec:java
 ```
 
 # Example OpenTelemetry Collector configuration
