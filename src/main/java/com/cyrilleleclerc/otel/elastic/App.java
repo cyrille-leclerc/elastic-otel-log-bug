@@ -54,7 +54,7 @@ public class App {
         String traceId;
         // PRODUCE OPEN TELEMETRY LOG MESSAGES
         {
-            System.out.println("Send otel logs...");
+            System.out.println("Send otel logs to '" + configuration.get("otel.exporter.otlp.endpoint") + "'...");
 
             AutoConfiguredOpenTelemetrySdk autoConfiguredOpenTelemetrySdk = AutoConfiguredOpenTelemetrySdk.builder()
                     .addPropertiesSupplier(() -> configuration).build();
